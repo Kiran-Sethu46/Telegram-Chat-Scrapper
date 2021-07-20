@@ -4,11 +4,11 @@ from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.types import InputPeerEmpty
 
 
-api_id =  #your api_id without '' 
+api_id =  #your api_id without ''
 api_hash = '------------------'#your api_hash
 phone = '+91---------'# your phonenumber with international code 
 client = client = TelegramClient('GetHistoryRequest',api_id, api_hash)
-
+#connections
 client.connect()
 if not client.is_user_authorized():
     client.send_code_request(phone)
